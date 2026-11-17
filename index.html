@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>श्री राम स्टोर | रोज़ के किराना सामान</title>
+    <title>श्री राम स्टोर | Premium Grocery & Home Essentials</title>
     <meta
       name="description"
-      content="श्री राम स्टोर - Naikepada, Waliv, Vasai. Daily groceries, household essentials and WhatsApp ordering."
+      content="श्री राम स्टोर, Naikepada, Waliv, Vasai. Premium grocery essentials, home care products, and quick WhatsApp ordering for your family needs."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,37 +19,53 @@
   <body>
     <header class="topbar">
       <div class="container nav">
-        <div class="brand">
+        <div class="brand" aria-label="श्री राम स्टोर">
           <span class="brand-mark">श्री</span>
           <div>
             <p class="brand-name">श्री राम स्टोर</p>
             <small>रोज़ के किराना सामान</small>
           </div>
         </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">होम</a>
+          <a href="#products">सामान</a>
+          <a href="#why-us">क्यों चुनें</a>
+          <a href="#reviews">रिव्यू</a>
+          <a href="#contact">संपर्क</a>
+        </nav>
+
         <a class="phone-btn" href="tel:8669770000">📞 8669770000</a>
       </div>
     </header>
 
-    <main>
+    <main id="home">
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
             <span class="badge">Naikepada, Waliv, Vasai</span>
-            <h1>आपके घरेलू सामान की भरोसेमंद दुकान</h1>
+            <h1>आपकी रोज़ की ज़रूरतें, एक सही जगह</h1>
             <p>
-              आटा, चावल, दाल, तिल, तेल, मसाले, साबुन, शैंपू, दूध और रोज़मर्रा
-              की जरूरतें — सब एक जगह पर.
+              ताज़ा किराना, घर के जरूरी सामान, दूध, दालें, तेल, मसाले और रोज़
+              की छोटी-सी जरूरतें — सब एक ही भरोसेमंद दुकान में.
             </p>
+
             <div class="hero-actions">
-              <a class="primary-btn" href="https://wa.me/918669770000?text=Namaste%20Shri%20Ram%20Store%2C%20mujhe%20saman%20chahiye." target="_blank" rel="noreferrer">
+              <a
+                class="primary-btn"
+                href="https://wa.me/918669770000?text=Namaste%20Shri%20Ram%20Store%2C%20mujhe%20saman%20chahiye."
+                target="_blank"
+                rel="noreferrer"
+              >
                 WhatsApp से ऑर्डर करें
               </a>
               <a class="secondary-btn" href="#products">सामान देखें</a>
             </div>
-            <ul class="quick-info">
-              <li>✅ रोज़ की जरूरतें</li>
-              <li>✅ सस्ती कीमत</li>
-              <li>✅ जल्दी डिलीवरी</li>
+
+            <ul class="quick-info" aria-label="Store advantages">
+              <li>✅ ताज़ा सामान</li>
+              <li>✅ भरोसेमंद कीमत</li>
+              <li>✅ तेज़ सेवा</li>
             </ul>
           </div>
 
@@ -76,21 +92,40 @@
         </div>
       </section>
 
-      <section class="features container">
+      <section class="stats container" aria-label="Store stats">
+        <div class="stat-box">
+          <strong>500+</strong>
+          <span>रोज़ के ग्राहक</span>
+        </div>
+        <div class="stat-box">
+          <strong>1k+</strong>
+          <span>ऑर्डर</span>
+        </div>
+        <div class="stat-box">
+          <strong>24/7</strong>
+          <span>WhatsApp सपोर्ट</span>
+        </div>
+        <div class="stat-box">
+          <strong>4.9/5</strong>
+          <span>ग्राहक रेटिंग</span>
+        </div>
+      </section>
+
+      <section class="features container" aria-label="Key features">
         <div class="feature-box">
           <span>🥬</span>
-          <h4>किराना</h4>
-          <p>चावल, आटा, दाल, मसाले, तेल</p>
+          <h4>किराना essentials</h4>
+          <p>चावल, आटा, दाल, तेल, मसाले और रोज़ का सामान</p>
         </div>
         <div class="feature-box">
           <span>🧼</span>
-          <h4>होमकेयर</h4>
-          <p>साबुन, शैंपू, डिशवॉश, कचरा बैग</p>
+          <h4>घर के लिए जरूरी आइटम</h4>
+          <p>साबुन, शैंपू, घरेलू सफ़ाई और दैनिक उपयोग</p>
         </div>
         <div class="feature-box">
-          <span>🍼</span>
-          <h4>डेली ज़रूरतें</h4>
-          <p>दूध, ब्रेड, बिस्कुट, स्नैक्स</p>
+          <span>🚚</span>
+          <h4>लोकल डिलीवरी</h4>
+          <p>Waliv, Vasai और आसपास के इलाकों में सेवा</p>
         </div>
       </section>
 
@@ -100,90 +135,185 @@
           <h2>लोकप्रिय आइटम</h2>
         </div>
 
-        <div class="category-tabs">
+        <div class="category-tabs" aria-label="Product categories">
           <button class="tab active" data-category="all">सभी</button>
           <button class="tab" data-category="grains">अनाज</button>
           <button class="tab" data-category="oil">तेल & मसाले</button>
           <button class="tab" data-category="home">घरेलू</button>
+          <button class="tab" data-category="dairy">दूध & स्नैक्स</button>
         </div>
 
         <div class="product-grid">
           <article class="product-card" data-category="grains">
             <div class="emoji">🌾</div>
             <h3>बासमती चावल</h3>
-            <p>साफ़ और सेहतमंद ताज़ा चावल</p>
-            <span>₹ 45 / किलोग्राम</span>
+            <p>साफ़, स्वादिष्ट और रोज़ की थाली के लिए सही</p>
+            <span>₹ 45 / kg</span>
           </article>
 
           <article class="product-card" data-category="grains">
             <div class="emoji">🌾</div>
             <h3>गेहूँ का आटा</h3>
-            <p>रोज़ की रोटी के लिए सही चुनाई</p>
-            <span>₹ 35 / किलोग्राम</span>
+            <p>रोटी और पराँठे के लिए ताज़ा और सही बनावट</p>
+            <span>₹ 35 / kg</span>
           </article>
 
           <article class="product-card" data-category="grains">
             <div class="emoji">🫘</div>
             <h3>दालें</h3>
-            <p>मसूर, उड़द, मूंग और अरहर</p>
-            <span>₹ 90 / किलोग्राम</span>
+            <p>मसूर, मूंग, उड़द और अरहर की बेहतर क्वालिटी</p>
+            <span>₹ 90 / kg</span>
           </article>
 
           <article class="product-card" data-category="oil">
             <div class="emoji">🫒</div>
             <h3>कुकिंग ऑयल</h3>
-            <p>रोज़ बनाने के लिए ताज़ा खाना पकाने वाला तेल</p>
-            <span>₹ 140 / लीटर</span>
+            <p>रोज़ की रसोई के लिए सही और अच्छी गुणवत्ता</p>
+            <span>₹ 140 / litre</span>
           </article>
 
           <article class="product-card" data-category="oil">
             <div class="emoji">🧂</div>
             <h3>मसाले</h3>
-            <p>हींग, लाल मिर्च, हल्दी, धनिया</p>
-            <span>₹ 60 / पैकेट</span>
+            <p>हल्दी, लाल मिर्च, धनिया, जीरा और मिर्च पाउडर</p>
+            <span>₹ 60 / pack</span>
           </article>
 
           <article class="product-card" data-category="home">
             <div class="emoji">🧼</div>
             <h3>साबुन & शैंपू</h3>
-            <p>घरेलू सफ़ाई और रोज़मर्रा की देखभाल</p>
-            <span>₹ 80 / यूनिट</span>
+            <p>घरेलू सफ़ाई और रोज़ की देखभाल के लिए</p>
+            <span>₹ 80 / unit</span>
+          </article>
+
+          <article class="product-card" data-category="dairy">
+            <div class="emoji">🥛</div>
+            <h3>दूध & डेयरी</h3>
+            <p>ताज़ा दूध, दही और घरेलू डेयरी आइटम</p>
+            <span>₹ 55 / packet</span>
+          </article>
+
+          <article class="product-card" data-category="dairy">
+            <div class="emoji">🍪</div>
+            <h3>स्नैक्स</h3>
+            <p>बिस्कुट, ब्रेड, चिप्स और छोटे परिवार के स्नैक्स</p>
+            <span>₹ 40 / pack</span>
           </article>
         </div>
       </section>
 
-      <section class="order container">
+      <section id="why-us" class="benefits container">
+        <div class="section-heading">
+          <p class="eyebrow">क्यों चुनें</p>
+          <h2>हमारी खासियत</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <div class="benefit-card">
+            <span>💯</span>
+            <h3>गुणवत्ता</h3>
+            <p>सामान की अच्छी क्वालिटी और भरोसेमंद सोर्सिंग</p>
+          </div>
+          <div class="benefit-card">
+            <span>💸</span>
+            <h3>कम कीमत</h3>
+            <p>दैनिक जरूरतों के लिए उचित और बजट-फ्रेंडली दरें</p>
+          </div>
+          <div class="benefit-card">
+            <span>⚡</span>
+            <h3>तेज़ सेवा</h3>
+            <p>तेज़ डिलीवरी और परिवार-आधारित सेवा</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews container">
+        <div class="section-heading">
+          <p class="eyebrow">ग्राहक</p>
+          <h2>क्या लोग कहते हैं</h2>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “सामान की क्वालिटी अच्छी है और कीमत भी सही है. रोज़ का सामान
+              जल्दी मिल जाता है.”
+            </p>
+            <strong>— राजेश शर्मा</strong>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “हमारा घर आसपास है, इसलिए यहां से सामान लेना आसान है. WhatsApp
+              ऑर्डर भी बहुत अच्छा है.”
+            </p>
+            <strong>— ज्योति पाटील</strong>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “श्री राम स्टोर से दाल, आटा और तेल खरीदना आसान है. नजदीकी और
+              भरोसेमंद दुकान.”
+            </p>
+            <strong>— नितीन ठाकुर</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="order container" id="contact">
         <div class="section-heading">
           <p class="eyebrow">ऑर्डर</p>
           <h2>WhatsApp पर ऑर्डर करें</h2>
         </div>
 
-        <form id="orderForm" class="order-form">
-          <div class="field-row">
-            <label>
-              नाम
-              <input type="text" id="customerName" placeholder="अपना नाम लिखें" required />
-            </label>
-            <label>
-              सामान
-              <input type="text" id="orderItem" placeholder="जैसे: चावल, दाल, तेल" required />
-            </label>
-          </div>
-          <div class="field-row">
-            <label>
-              मात्रा
-              <input type="text" id="quantity" placeholder="जैसे: 2 किलो / 1 लीटर" required />
-            </label>
-            <label>
-              फ���न
-              <input type="tel" id="phone" placeholder="अपना फोन नंबर" required />
-            </label>
+        <div class="contact-grid">
+          <div class="info-panel">
+            <h3>संपर्क जानकारी</h3>
+            <ul>
+              <li><strong>📍 पता:</strong> Naikepada, Waliv, Vasai</li>
+              <li><strong>📞 फोन:</strong> 8669770000</li>
+              <li><strong>💬 WhatsApp:</strong> तुरंत ऑर्डर</li>
+            </ul>
+            <a
+              class="primary-btn"
+              href="https://wa.me/918669770000?text=Namaste%20Shri%20Ram%20Store%2C%20mujhe%20saman%20chahiye."
+              target="_blank"
+              rel="noreferrer"
+            >
+              अभी ऑर्डर करें
+            </a>
           </div>
 
-          <button type="submit" class="primary-btn full-width">
-            WhatsApp पर भेजें
-          </button>
-        </form>
+          <form id="orderForm" class="order-form">
+            <div class="field-row">
+              <label>
+                नाम
+                <input type="text" id="customerName" placeholder="अपना नाम लिखें" required />
+              </label>
+              <label>
+                सामान
+                <input type="text" id="orderItem" placeholder="जैसे: चावल, दाल, तेल" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                मात्रा
+                <input type="text" id="quantity" placeholder="जैसे: 2 किलो / 1 लीटर" required />
+              </label>
+              <label>
+                फोन
+                <input type="tel" id="phone" placeholder="अपना फोन नंबर" required />
+              </label>
+            </div>
+
+            <button type="submit" class="primary-btn full-width">
+              WhatsApp पर भेजें
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -193,375 +323,13 @@
           <h3>श्री राम स्टोर</h3>
           <p>Naikepada, Waliv, Vasai</p>
         </div>
-        <a href="https://wa.me/918669770000?text=Namaste%20Shri%20Ram%20Store%2C%20mujhe%20saman%20chahiye." target="_blank" rel="noreferrer">
-          📞 8669770000
-        </a>
+        <div class="footer-links">
+          <a href="tel:8669770000">📞 8669770000</a>
+          <a href="https://wa.me/918669770000?text=Namaste%20Shri%20Ram%20Store%2C%20mujhe%20saman%20chahiye." target="_blank" rel="noreferrer">💬 WhatsApp</a>
+        </div>
       </div>
     </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
