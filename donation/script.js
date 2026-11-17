@@ -9,15 +9,21 @@ function makeUpiLink(amount = '') {
   return `upi://pay?${params.toString()}`;
 }
 
-// QR contains only the supplied UPI ID; no amount is forced.
-const qrPayload = makeUpiLink();
-qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=520x520&margin=12&data=${encodeURIComponent(qrPayload)}`;
+function makeQrData(amount = '') {
+  return makeUpiLink(amount);
+}
+
+const initialQr = makeQrData('101');
+qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=520x520&margin=12&data=${encodeURIComponent(initialQr)}`;
 
 amountButtons.forEach((button) => {
   button.addEventListener('click', () => {
     amountButtons.forEach((item) => item.classList.remove('selected'));
     button.classList.add('selected');
-    upiButton.href = makeUpiLink(button.dataset.amount);
+
+    const amount = button.dataset.amount || '';
+    upiButton.href = makeUpiLink(amount);
+    qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=520x520&margin=12&data=${encodeURIComponent(makeQrData(amount))}`;
   });
 });
 
